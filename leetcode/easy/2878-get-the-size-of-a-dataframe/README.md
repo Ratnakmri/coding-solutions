@@ -56,9 +56,9 @@ This DataFrame contains 10 rows and 5 columns.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 223 ms  
-**Memory:** 65.5 MB  
-**Submitted:** 2026-08-16T10:08:27.325Z  
+**Runtime:** 304 ms (beats 21.73%)  
+**Memory:** 66.5 MB (beats 36.83%)  
+**Submitted:** 2026-08-16T10:08:32.307Z  
 
 ```py
 import pandas as pd
