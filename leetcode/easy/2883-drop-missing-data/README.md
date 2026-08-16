@@ -51,9 +51,9 @@ Student with id 217 havs empty value in the name column, so it will be removed.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 238 ms  
-**Memory:** 66.1 MB  
-**Submitted:** 2026-08-16T11:12:51.657Z  
+**Runtime:** 301 ms (beats 35.93%)  
+**Memory:** 66.9 MB (beats 86.26%)  
+**Submitted:** 2026-08-16T11:12:56.419Z  
 
 ```py
 import pandas as pd
