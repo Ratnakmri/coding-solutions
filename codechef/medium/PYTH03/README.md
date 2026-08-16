@@ -4,30 +4,39 @@
 
 ## Problem
 
-### Printing a number
+### Printing text
 
 Listen
 
-We'll begin with the print statement, which is commonly the first thing you learn in most programming languages.
+In the last problem, we saw how to print a number (using `print`).
 
-The print statement in Python is used to display output on the screen. You can use it to print numbers, text, or the results of expressions.
+Now let's see how to output some text.
+To print text, there is only one difference. All textual content should start and end with either double quotes(**" "**) or single quotes(**' '**).
 
-Let us output a number in Python.
+For eg -
 
-Some code has been populated in the IDE on the right.
-This code just prints 12 on the screen when you run it.
+```
+print("I love Python") # Output: I love Python
+print('I love Python') # Output: I love Python
 
-Click on  **Submit**  below the IDE to know the result. Then click on next to continue.
+```
+
+These two lines perform identical tasks; the first utilizes double quotes, while the second uses single quotes.
+
+### Task
+- Replace the _ (underscores) in the editor with the text I love Python and Submit.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T11:37:26.881Z  
+**Submitted:** 2026-08-16T13:19:16.644Z  
 
 ```py
-print(12)
+print("I love Python")
+
+
 ```
 
 ---
