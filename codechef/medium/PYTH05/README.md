@@ -4,18 +4,16 @@
 
 ## Problem
 
-### MCQ on printing text
-
-Which line of code will output the text `Hi`?
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T13:20:21.123Z  
+**Submitted:** 2026-08-16T13:20:10.829Z  
 
-```cpp
+```py
 # Replace the code print(__ + __) with print(21 + 40)
 
 print(21 + 40)
