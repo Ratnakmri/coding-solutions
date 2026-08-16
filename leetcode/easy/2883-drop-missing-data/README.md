@@ -51,16 +51,16 @@ Student with id 217 havs empty value in the name column, so it will be removed.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 301 ms (beats 35.93%)  
-**Memory:** 66.9 MB (beats 86.26%)  
-**Submitted:** 2026-08-16T11:12:56.419Z  
+**Runtime:** 281 ms (beats 72.13%)  
+**Memory:** 67.4 MB (beats 14.00%)  
+**Submitted:** 2026-08-16T11:13:36.594Z  
 
 ```py
 import pandas as pd
 
 def dropMissingData(students: pd.DataFrame) -> pd.DataFrame:
     students=students.replace("null",pd.NA)
-    return students.dropna(subset=["student_id","name"])
+    return students.dropna(subset=["name"])
 ```
 
 ---
