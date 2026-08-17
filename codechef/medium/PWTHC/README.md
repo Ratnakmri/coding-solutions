@@ -57,18 +57,17 @@ There are $3 \times 4 = 12$ chairs in total, which is not enough for $15$ people
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T15:17:42.339Z  
+**Submitted:** 2026-08-17T15:23:49.317Z  
 
 ```py
-# cook your dish here
-N=input()
-K=input()
-P=input()
-total_chairs=N*K 
-if total_chairs>= P :
-    print("YES")
-else:
-    print("NO")
+T = int(input())
+for _ in range(T):
+    N, K, P = map(int, input().split())
+    if N * K >= P:
+        print("YES")
+    else:
+        print("NO")
+
 ```
 
 ---
