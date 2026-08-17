@@ -1,7 +1,9 @@
-T = int(input())
-for _ in range(T):
-    N, K, P = map(int, input().split())
-    if N * K >= P:
-        print("YES")
-    else:
-        print("NO")
+# cook your dish here
+N=input()
+K=input()
+P=input()
+total_chairs=N*K 
+if total_chairs>= P :
+    print("YES")
+else:
+    print("NO")
