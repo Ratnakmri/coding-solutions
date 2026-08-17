@@ -49,9 +49,9 @@ The data types of the column grade is converted to int.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 297 ms (beats 33.56%)  
-**Memory:** 66.2 MB (beats 76.24%)  
-**Submitted:** 2026-08-17T15:14:00.597Z  
+**Runtime:** 288 ms (beats 47.61%)  
+**Memory:** 66.1 MB (beats 87.86%)  
+**Submitted:** 2026-08-17T15:14:50.551Z  
 
 ```py
 import pandas as pd
