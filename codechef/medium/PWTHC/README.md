@@ -57,16 +57,20 @@ There are $3 \times 4 = 12$ chairs in total, which is not enough for $15$ people
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T15:23:49.317Z  
+**Submitted:** 2026-08-17T15:18:13.334Z  
 
 ```py
-T = int(input())
-for _ in range(T):
-    N, K, P = map(int, input().split())
-    if N * K >= P:
-        print("YES")
-    else:
-        print("NO")
+# Read input values
+N, K, P = map(int, input().split())
+
+# Calculate total chairs
+total_chairs = N * K
+
+# Compare with number of students
+if total_chairs >= P:
+    print("YES")
+else:
+    print("NO")
 
 ```
 
