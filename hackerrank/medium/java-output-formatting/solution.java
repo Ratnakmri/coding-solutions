@@ -1,17 +1,19 @@
 import java.util.Scanner;
 
 public class Solution {
+
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                System.out.printf("%-15s%03d%n", s1, x);
+            }
+            System.out.println("================================");
 
-        int i = scan.nextInt();        // read integer
-        double d = scan.nextDouble();  // read double
-        scan.nextLine();               // consume leftover newline
-        String s = scan.nextLine();    // read string
-
-        // Print outputs in required format
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
     }
 }
+
+
+
