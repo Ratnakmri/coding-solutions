@@ -1,26 +1,16 @@
-import java.util.*;
-import java.io.*;
+import java.util.Scanner;
 
-
-
-class Solution{
-    public static void main(String []argh)
-    {
-
-
-
+public class Solution {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int t=sc.nextInt();
+        int t = sc.nextInt(); // number of test cases
 
-        for(int i=0;i<t;i++)
-        {
+        for (int i = 0; i < t; i++) {
+            try {
+                long x = sc.nextLong(); // read the number
+                System.out.println(x + " can be fitted in:");
 
-            try
-            {
-                long x=sc.nextLong();
-                System.out.println(x+" can be fitted in:");
-                if(x>=-128 && x<=127)System.out.println("* byte");
-                                if (x >= Byte.MIN_VALUE && x <= Byte.MAX_VALUE) {
+                if (x >= Byte.MIN_VALUE && x <= Byte.MAX_VALUE) {
                     System.out.println("* byte");
                 }
                 if (x >= Short.MIN_VALUE && x <= Short.MAX_VALUE) {
@@ -29,17 +19,13 @@ class Solution{
                 if (x >= Integer.MIN_VALUE && x <= Integer.MAX_VALUE) {
                     System.out.println("* int");
                 }
-                // long always fits if no exception
+                // If it fits in long, print long
                 System.out.println("* long");
+            } catch (Exception e) {
+                // consume invalid token so scanner can continue
+                System.out.println(sc.next() + " can't be fitted anywhere.");
             }
-            catch(Exception e)
-            {
-                System.out.println(sc.next()+" can't be fitted anywhere.");
-            }
-
         }
+        sc.close();
     }
 }
-
-
-
