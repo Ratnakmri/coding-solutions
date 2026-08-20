@@ -56,9 +56,9 @@ Explanation: Joe is the only employee who earns more than his manager.
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 461 ms (beats 28.55%)  
+**Runtime:** 460 ms (beats 28.85%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-20T18:28:46.790Z  
+**Submitted:** 2026-08-20T18:28:56.733Z  
 
 ```sql
 SELECT e.name AS Employee
