@@ -4,28 +4,52 @@
 
 ## Problem
 
-### Block Nesting Demonstrator
+### Valid Code Block Usage
 
-In this example, we demonstrate how code blocks are used to structure and execute a Java program.
+Which of the following Java code snippets correctly defines a main method with a code block?
 
-Inside the class, the main method serves as the entry point, and separate code blocks `{}` are used to organize execution. The `System.out.println()` method is used inside each block to print messages to the console.
-
-When executed, the code will display a structured message output.
+Option 1:
 
 ```
-Executing Block 1
-Executing Block 2
+public static void main(String[] args) 
+    System.out.println("Hello!");
+
+```
+
+Option 2:
+
+```
+public static void main(String[] args) {
+    System.out.println("Hello!");
+}
+
+```
+
+Option 3:
+
+```
+public static void main(String[] args) (
+    System.out.println("Hello!");
+)
+
+```
+
+Option 4:
+
+```
+public static void main(String[] args) []
+    System.out.println("Hello!");
 
 ```
 
 ## Solution
 
-**Language:** Java  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-21T18:24:32.216Z  
+**Submitted:** 2026-08-21T18:25:08.665Z  
 
-```java
+```cpp
 class Codechef {  
     public static void main(String[] args) {
         // Execute the first block
