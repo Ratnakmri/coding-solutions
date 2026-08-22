@@ -77,18 +77,18 @@ Output:
 
 ## Solution
 
-**Language:** SQL  
-**Runtime:** 636 ms (beats 41.74%)  
-**Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-21T18:41:29.552Z  
+**Language:** Python  
+**Runtime:** 273 ms (beats 78.48%)  
+**Memory:** 67.2 MB (beats 82.11%)  
+**Submitted:** 2026-08-22T18:27:22.521Z  
 
-```sql
-# Write your MySQL query statement below
-select c.name as Customers 
-from customers as c
-left join orders as o
-on c.id=o.customerid
-where o.id is null;
+```py
+import pandas as pd
+
+def find_customers(customers: pd.DataFrame, orders: pd.DataFrame) -> pd.DataFrame:
+    never_ordered= customers[~customers["id"].isin(orders["customerId"])]
+    result= never_ordered[["name"]].rename(columns={'name':'customers'})
+    return result
 ```
 
 ---
