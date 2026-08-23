@@ -59,9 +59,9 @@ Output:
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 1192 ms (beats 5.00%)  
+**Runtime:** 570 ms (beats 34.35%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-23T17:52:50.636Z  
+**Submitted:** 2026-08-23T17:53:39.301Z  
 
 ```sql
 select player_id, min(event_date) as first_login from activity group by player_id;
