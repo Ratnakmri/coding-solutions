@@ -67,7 +67,7 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:17:34.635Z  
+**Submitted:** 2026-08-24T16:17:40.636Z  
 
 ```java
 import java.util.*;
