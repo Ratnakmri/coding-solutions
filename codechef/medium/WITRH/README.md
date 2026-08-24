@@ -61,7 +61,7 @@ Since the robot can travel only $5$ units, it cannot reach the charging station.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T15:45:37.978Z  
+**Submitted:** 2026-08-24T15:46:50.678Z  
 
 ```java
 import java.util.*;
@@ -72,7 +72,7 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Scanner sc= new Scanner();
+		Scanner sc= new Scanner(System.in);
 		int X = sc.nextInt();
 		int Y = sc.nextInt();
 		int K = sc.nextInt();
@@ -80,7 +80,7 @@ class Codechef
 		if(Math.abs(X-Y)<=K){
 		    System.out.print("YES");
 		}else{
-		    System.out.println("NO")
+		    System.out.println("NO");
 		}
 	}
 }
