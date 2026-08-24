@@ -1,6 +1,10 @@
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class Codechef {
+
+
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String S = sc.next().toLowerCase();  
