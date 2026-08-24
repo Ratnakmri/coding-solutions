@@ -59,7 +59,7 @@ For the third test case, its sum cannot be made `0`. Therefore, the answer is `-
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T15:52:39.401Z  
+**Submitted:** 2026-08-24T15:55:05.390Z  
 
 ```java
 import java.util.*;
@@ -70,8 +70,8 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-
+		Scanner sc = new Scanner(System.in);
+		
 	}
 }
 
