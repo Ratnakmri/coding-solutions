@@ -71,7 +71,7 @@ Therefore, the number of valid ways is  **2**.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T14:01:18.343Z  
+**Submitted:** 2026-08-24T14:02:11.484Z  
 
 ```java
 import java.util.*;
