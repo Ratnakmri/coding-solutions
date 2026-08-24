@@ -67,35 +67,36 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:28:36.649Z  
+**Submitted:** 2026-08-24T16:24:30.638Z  
 
 ```java
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class Codechef {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String S = sc.next().toLowerCase();  
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		string S = sc.next();
+		sc.close();
+		int[] freq = new int[26];
+		for (char c : S.toCharArray()){
+		    freq[c-'a']++;
+		    
+		}
+		int maxFreq = -1;
+		char answer = 'a';
+		for (int i =0 ; i <26 ; i++){
+		    if (freq[i]>maxFreq){
+		        maxFreq= freq[i];
+		        answer = (char)('a'+ i);
+		    }
+		}
+		System.out.println(answer);
 
-        int[] freq = new int[26];
-        for (char c : S.toCharArray()) {
-            if (c >= 'a' && c <= 'z') {      
-                freq[c - 'a']++;
-            }
-        }
-
-        int maxFreq = -1;
-        char answer = 'a';
-        for (int i = 0; i < 26; i++) {
-            if (freq[i] > maxFreq) {
-                maxFreq = freq[i];
-                answer = (char) ('a' + i);
-            }
-        }
-
-        System.out.println(answer);
-        sc.close();
-    }
+	}
 }
 
 ```
