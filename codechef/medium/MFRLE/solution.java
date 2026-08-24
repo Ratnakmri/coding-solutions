@@ -7,7 +7,7 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc = new Scanner(System.in);
-		string S = sc.next();
+		String S = sc.next().toLowerCase();
 		sc.close();
 		int[] freq = new int[26];
 		for (char c : S.toCharArray()){
