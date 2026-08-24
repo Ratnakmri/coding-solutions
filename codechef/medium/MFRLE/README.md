@@ -67,7 +67,7 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:24:24.628Z  
+**Submitted:** 2026-08-24T16:26:18.620Z  
 
 ```java
 import java.util.*;
@@ -79,7 +79,7 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc = new Scanner(System.in);
-		string S = sc.next();
+		String S = sc.next().toLowerCase();
 		sc.close();
 		int[] freq = new int[26];
 		for (char c : S.toCharArray()){
