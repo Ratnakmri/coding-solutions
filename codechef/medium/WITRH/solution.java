@@ -10,6 +10,11 @@ class Codechef
 		int X = sc.nextInt();
 		int Y = sc.nextInt();
 		int K = sc.nextInt();
-		
+		sc.close();
+		if(Math.abs(X-Y)<=K){
+		    System.out.print("YES");
+		}else{
+		    System.out.println("NO")
+		}
 	}
 }
