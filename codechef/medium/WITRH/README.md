@@ -61,7 +61,7 @@ Since the robot can travel only $5$ units, it cannot reach the charging station.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T15:43:01.974Z  
+**Submitted:** 2026-08-24T15:43:09.940Z  
 
 ```java
 import java.util.*;
