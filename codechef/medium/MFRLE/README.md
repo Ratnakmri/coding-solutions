@@ -67,12 +67,16 @@ Since `x` comes first alphabetically, the answer is `x`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:28:41.631Z  
+**Submitted:** 2026-08-24T16:31:04.444Z  
 
 ```java
 import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-public class Codechef {
+
+
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String S = sc.next().toLowerCase();  
