@@ -1,4 +1,4 @@
-# Finding the percentage
+# itertools.product()
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -65,19 +65,16 @@ The second line contains the space separated elements of list $B$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T16:21:05.777Z  
+**Submitted:** 2026-08-25T16:32:27.774Z  
 
 ```py
-if __name__ == '__main__':
-    n = int(input())
-    student_marks = {}
-    for _ in range(n):
-        name, *line = input().split()
-        scores = list(map(float, line))
-        student_marks[name] = scores
-    query_name = input()
-    avg= sum(student_marks[query_name]) / len(student_marks[query_name])
-    print(f"{avg:.2f}")
+from itertools import product
+
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+for p in product(A, B):
+    print(p, end=" ")
 
 ```
 
