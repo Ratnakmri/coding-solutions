@@ -44,7 +44,7 @@ The second line contains $N$ space-separated integers that make up $A$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T18:22:25.928Z  
+**Submitted:** 2026-08-25T18:22:26.610Z  
 
 ```java
 import java.util.*;
