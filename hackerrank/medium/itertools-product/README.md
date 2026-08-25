@@ -65,7 +65,7 @@ The second line contains the space separated elements of list $B$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T16:32:27.774Z  
+**Submitted:** 2026-08-25T17:49:11.562Z  
 
 ```py
 from itertools import product
