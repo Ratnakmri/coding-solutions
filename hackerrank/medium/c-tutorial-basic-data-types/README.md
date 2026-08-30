@@ -1,4 +1,4 @@
-# Input and Output
+# Basic Data Types
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -60,21 +60,30 @@ Print each element on a new line in the same order it was received as input. Not
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-30T17:31:01.297Z  
+**Submitted:** 2026-08-30T17:33:32.581Z  
 
 ```cpp
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
+#include <cstdio>
+#include <iomanip>
 using namespace std;
 
-
 int main() {
-    int a,b,c;
-    cin >> a>>b>>c ;
-    cout << (a+b+c)<< endl;
+    // Complete the code.
+    int a;
+    long b;
+    char c;
+    float d;
+    double e;
+
+    cin >> a >> b >> c >> d >> e;
+
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+    cout << fixed << setprecision(3) << d << endl;
+    cout << fixed << setprecision(9) << e << endl;
+
     return 0;
 }
 
