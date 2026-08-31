@@ -92,7 +92,7 @@ Since $2800 < 3000$, the output is `NO`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:06:31.600Z  
+**Submitted:** 2026-08-31T14:06:40.606Z  
 
 ```java
 import java.util.*;
