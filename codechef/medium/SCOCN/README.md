@@ -118,7 +118,7 @@ Therefore, the output is `1`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:12:22.557Z  
+**Submitted:** 2026-08-31T14:12:29.555Z  
 
 ```java
 import java.util.*;
