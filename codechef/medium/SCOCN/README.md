@@ -118,7 +118,7 @@ Therefore, the output is `1`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T14:12:29.555Z  
+**Submitted:** 2026-08-31T14:45:35.339Z  
 
 ```java
 import java.util.*;
@@ -133,8 +133,33 @@ class Codechef
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
+        int[ arr = new int[N]]
+        for (int i= 0; i<N; i++{
+            arr[i]=Integer.parseInt(st.nextTokenizer(br.readLine());
+            
+        }
+        int x = Integer.parseInt(st.nextTokenizer(br.readLine());
+        int count = 0;
+        int index= -1;
         
+        for (int i = 0; i < N; i++) {
+            if (arr[i] == X) {
+                count++;
+                if (count == 2) {
+                    index = i;
+                    break;
+                }
+            }
+        }
 
+        if (count == 0) {
+            System.out.println(-1);
+        } else if (count == 1) {
+            System.out.println(-2);
+        } else {
+            System.out.println(index);
+        }
+        
 	}
 }
 
