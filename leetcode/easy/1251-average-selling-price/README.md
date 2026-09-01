@@ -87,16 +87,19 @@ Average selling price for product 2 = ((200  *15) + (30*  30)) / 230 = 16.96
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 189 ms  
-**Memory:** 0B  
-**Submitted:** 2026-09-01T17:40:32.674Z  
+**Runtime:** 1046 ms (beats 23.52%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-09-01T17:46:02.951Z  
 
 ```sql
-select p.product_id, avg(p.price) 
-from prices p
-left join unitssold u
-on p.product_id = u.product_id
-;
+SELECT p.product_id,
+       COALESCE(ROUND(SUM(u.units * p.price) / SUM(u.units), 2), 0) AS average_price
+FROM Prices p
+LEFT JOIN UnitsSold u
+  ON p.product_id = u.product_id
+  AND u.purchase_date BETWEEN p.start_date AND p.end_date
+GROUP BY p.product_id;
+
 ```
 
 ---
