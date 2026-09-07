@@ -83,7 +83,7 @@ Therefore, the required sum is `0`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-07T14:25:01.355Z  
+**Submitted:** 2026-09-07T14:47:25.209Z  
 
 ```java
 import java.util.*;
@@ -94,9 +94,22 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int K = sc.nextInt();
+		int[] arr = new int[N];
+		for ( int i= 0 ; i<N ; i++){
+		    arr[i] = sc.nextInt();
+		}
+		long sum = 0;
+        for (int i = 0; i < N; i += 2) { 
+            if (arr[i] > 2 * K) {
+                sum += arr[i];
+            }
+        }
 
-	}
+        System.out.println(sum);
+        sc.close();
 }
 
 ```
