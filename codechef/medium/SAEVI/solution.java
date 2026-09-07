@@ -22,5 +22,4 @@ class Codechef
 
         System.out.println(sum);
         sc.close();
-	}
 }
