@@ -1,3 +1,6 @@
-for i in $(seq 1 50); do
- echo $i 
-done
+read x 
+read y 
+echo $((x+y))
+echo $((x-y))
+echo $((x*y))
+echo $((x/y))
