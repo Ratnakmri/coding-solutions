@@ -1,22 +1,50 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
 import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+class Result {
+
+    /*
+     * Complete the 'simpleArraySum' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts INTEGER_ARRAY ar as parameter.
+     */
+
+    public static int simpleArraySum(List<Integer> ar) {
+    // Write your code here
+     return ar.stream().mapToInt(Integer::intValue).sum();
+
+
+    }
+
+}
 
 public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-    static int solveMeFirst(int a, int b) {
-      // Hint: Type return a+b; below 
-      return a + b;
-	}
+        int arCount = Integer.parseInt(bufferedReader.readLine().trim());
 
-  
-   public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int a;
-        a = in.nextInt();
-        int b;
-        b = in.nextInt();
-        in.close();
-        int sum;
-        sum = solveMeFirst(a, b);
-        System.out.println(sum);
-	}
+        List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+            .map(Integer::parseInt)
+            .collect(toList());
+
+        int result = Result.simpleArraySum(ar);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
 }
