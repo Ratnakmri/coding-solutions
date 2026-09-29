@@ -1,4 +1,4 @@
-# Let's Echo
+# Looping and Skipping
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -33,10 +33,12 @@ _There is no input._
 **Language:** Bash  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T16:44:00.189Z  
+**Submitted:** 2026-09-29T16:48:54.074Z  
 
 ```sh
-echo "HELLO"
+for i in $(seq 1 2 100); do
+  echo $i
+done
 
 ```
 
