@@ -1,4 +1,4 @@
-# Looping with Numbers
+# The World of Numbers
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -27,12 +27,15 @@ $Y \ne 0$
 **Language:** Bash  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T16:53:05.915Z  
+**Submitted:** 2026-09-29T17:01:01.539Z  
 
 ```sh
-for i in $(seq 1 50); do
- echo $i 
-done
+read x 
+read y 
+echo $((x+y))
+echo $((x-y))
+echo $((x*y))
+echo $((x/y))
 
 ```
 
