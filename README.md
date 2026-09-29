@@ -2,7 +2,7 @@
 
 # 🧠 Coding Solutions
 
-![Total Solved](https://img.shields.io/badge/Total_Solved-167-blue?style=for-the-badge)
+![Total Solved](https://img.shields.io/badge/Total_Solved-168-blue?style=for-the-badge)
 ![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
 ![Last Synced](https://img.shields.io/badge/Last_Synced-29--9--2026-green?style=for-the-badge)
 
@@ -17,9 +17,9 @@
 | Difficulty | Solved |
 |:---:|:---:|
 | 🟢 Easy | **54** |
-| 🟡 Medium | **113** |
+| 🟡 Medium | **114** |
 | 🔴 Hard | **0** |
-| **Total** | **167** |
+| **Total** | **168** |
 
 ## 🛠️ Languages
 
@@ -29,7 +29,7 @@
 | Python | **40** |
 | SQL | **35** |
 | C++ | **18** |
-| Bash | **7** |
+| Bash | **8** |
 
 ## 📂 Repository Structure
 
