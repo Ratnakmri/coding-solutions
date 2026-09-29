@@ -1,4 +1,4 @@
-# Looping and Skipping
+# A Personalized Echo
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -41,12 +41,11 @@ The evaluation will be case-sensitive.
 **Language:** Bash  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T16:49:05.921Z  
+**Submitted:** 2026-09-29T16:51:02.105Z  
 
 ```sh
-for i in $(seq 1 2 100); do
-  echo $i
-done
+read name
+echo "Welcome $name"
 
 ```
 
