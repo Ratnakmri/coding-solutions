@@ -31,62 +31,42 @@ The second line contains $n$ space-separated integers representing the array's e
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T17:20:22.540Z  
+**Submitted:** 2026-09-29T17:31:41.543Z  
 
-```java
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+```py
+#!/bin/python3
 
-class Result {
+import math
+import os
+import random
+import re
+import sys
 
-    /*
-     * Complete the 'simpleArraySum' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY ar as parameter.
-     */
+#
+# Complete the 'simpleArraySum' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY ar as parameter.
+#
 
-    public static int simpleArraySum(List<Integer> ar) {
-    // Write your code here
-     return ar.stream().mapToInt(Integer::intValue).sum();
+def simpleArraySum(ar):
+    return sum(ar)
 
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    }
+    ar_count = int(input().strip())
 
-}
+    ar = list(map(int, input().rstrip().split()))
 
-public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+    result = simpleArraySum(ar)
 
-        int arCount = Integer.parseInt(bufferedReader.readLine().trim());
+    fptr.write(str(result) + '\n')
 
-        List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
-
-        int result = Result.simpleArraySum(ar);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
-    }
-}
+    fptr.close()
 
 ```
 
