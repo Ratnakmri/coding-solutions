@@ -1,4 +1,4 @@
-# Comparing Numbers
+# Getting started with conditionals
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -31,20 +31,16 @@ echo `YES` or `NO` to STDOUT.
 **Language:** Bash  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-29T17:08:58.558Z  
+**Submitted:** 2026-10-30T16:24:31.387Z  
 
 ```sh
-read X
-read Y
+read c
 
-if [ "$X" -lt "$Y" ]
+if [ "$c" = "Y" ] || [ "$c" = "y" ]
 then
-    echo "X is less than Y"
-elif [ "$X" -gt "$Y" ]
-then
-    echo "X is greater than Y"
+    echo YES
 else
-    echo "X is equal to Y"
+    echo NO
 fi
 
 ```
